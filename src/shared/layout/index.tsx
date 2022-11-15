@@ -1,15 +1,13 @@
-import { Navbar } from "../components"
+import { Container } from "react-bootstrap"
+import { NavbarSite } from "../components"
 
 interface ILayoutPaginasProps {
     children: React.ReactNode
 }
 export const LayoutPaginas: React.FC<ILayoutPaginasProps> = ({ children }) => {
     return (
-        <div>
-            <Navbar />
-            <div>
-                {children}
-            </div>
-        </div>
+        <Container fluid>
+            {children}
+            </Container>
     )
 }

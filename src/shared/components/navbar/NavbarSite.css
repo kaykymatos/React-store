@@ -1,0 +1,9 @@
+.lista_espacamento a{
+  padding: 10px;
+  text-decoration: none;
+  color: white;
+}
+.margin-links{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}

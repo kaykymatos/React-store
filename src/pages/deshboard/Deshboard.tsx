@@ -1,25 +1,96 @@
-import { Col, Row } from "react-bootstrap"
 import "./Deshboard.css"
 import { ProductCards } from "../../shared/components";
+import { Box, Grid } from "@mui/material";
+import { Container } from "@mui/system";
 
 export const Deshboard = () => {
+    const logo = require('./img/car.jpg');
     return (
         <>
-            <Row>
-                <Col className="background-dashborad text-dashboard" sm={12} md={12} lg={12} xl={12}>
-                    <h1>Welcome</h1>
-                    <p>This is for you, here you can buy a lot of products</p>
+            <Box>
+                <Container maxWidth="xl" className="background-dashborad text-dashboard" >
+                    <Grid item  >
+                        <h1>Welcome</h1>
+                        <p>This is for you, here you can buy a lot of products</p>
+                    </Grid>
 
-                </Col>
-            </Row>
-            <Row>
-                <ProductCards
-                    cardTitle="Card Title"
-                    cardDescription="Description"
-                    altImg="Image description"
-                    img=""
-                />
-            </Row>
+                </Container>
+            </Box>
+            <Box>
+                <Container maxWidth="xl"  >
+                    <Grid spacing={3} container justifyContent="center" alignItems="center">
+                        <Grid item sm={6} xs={12} lg={3} md={3} xl={3} >
+                            <ProductCards
+                                cardTitle="Card Title"
+                                cardDescription="Description"
+                                altImg="Image description"
+                                img={String(logo)}
+                            />
+
+                        </Grid>
+                        <Grid item sm={6} xs={12} lg={3} md={3} xl={3}>
+                            <ProductCards
+                                cardTitle="Card Title"
+                                cardDescription="Description"
+                                altImg="Image description"
+                                img={String(logo)}
+                            />
+                        </Grid>
+                        <Grid item sm={6} xs={12} lg={3} md={3} xl={3}>
+                            <ProductCards
+                                cardTitle="Card Title"
+                                cardDescription="Description"
+                                altImg="Image description"
+                                img={String(logo)}
+                            />
+                        </Grid>
+                        <Grid item sm={6} xs={12} lg={3} md={3} xl={3}>
+                            <ProductCards
+                                cardTitle="Card Title"
+                                cardDescription="Description"
+                                altImg="Image description"
+                                img={String(logo)}
+                            />
+                        </Grid>
+
+
+                        <Grid item sm={6} xs={12} lg={3} md={3} xl={3} >
+                            <ProductCards
+                                cardTitle="Card Title"
+                                cardDescription="Description"
+                                altImg="Image description"
+                                img={String(logo)}
+                            />
+
+                        </Grid>
+                        <Grid item sm={6} xs={12} lg={3} md={3} xl={3}>
+                            <ProductCards
+                                cardTitle="Card Title"
+                                cardDescription="Description"
+                                altImg="Image description"
+                                img={String(logo)}
+                            />
+                        </Grid>
+                        <Grid item sm={6} xs={12} lg={3} md={3} xl={3}>
+                            <ProductCards
+                                cardTitle="Card Title"
+                                cardDescription="Description"
+                                altImg="Image description"
+                                img={String(logo)}
+                            />
+                        </Grid>
+                        <Grid item sm={6} xs={12} lg={3} md={3} xl={3}>
+                            <ProductCards
+                                cardTitle="Card Title"
+                                cardDescription="Description"
+                                altImg="Image description"
+                                img={String(logo)}
+                            />
+                        </Grid>
+                    </Grid>
+                </Container>
+            </Box>
+
         </>
     )
 }

@@ -7,6 +7,7 @@ interface IProductCardsProps{
     cardDescription:string
 }
 export const ProductCards:React.FC<IProductCardsProps> = ({img, altImg,cardTitle,cardDescription}) => {
+
     return (
         <Card sx={{ maxWidth: 331, marginTop: 2 }} >
             <CardMedia

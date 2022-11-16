@@ -1,12 +1,12 @@
-import { Container } from "react-bootstrap"
+import { Box } from "@mui/material"
 
 interface ILayoutPaginasProps {
     children: React.ReactNode
 }
 export const LayoutPaginas: React.FC<ILayoutPaginasProps> = ({ children }) => {
     return (
-        <Container fluid>
+        <Box>
             {children}
-        </Container>
+        </Box>
     )
 }

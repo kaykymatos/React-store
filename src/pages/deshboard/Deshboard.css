@@ -1,12 +1,13 @@
-.background-dashborad{
-    background-image: url('./img//dashboar-image.jpg');
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: 100% 100%;
-    text-align: center;
-    padding: 30px;
+.text-dashboard {
+  color: white;
+  text-shadow: 2px 2px #000000;
 }
-.text-dashboard{
-    color: white;
-    text-shadow: 2px 2px #000000;
+.backgroudn-color-dashboard {
+  background: rgb(11, 0, 205);
+  background: linear-gradient(
+    90deg,
+    rgba(11, 0, 205, 1) 0%,
+    rgba(79, 18, 246, 1) 46%,
+    rgba(0, 212, 255, 1) 100%
+  );
 }

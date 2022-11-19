@@ -1,4 +1,4 @@
-import { Box, FormControlLabel, Grid, ListItem, ListItemText } from "@mui/material"
+import { Box, FormControlLabel, Grid, ListItem, ListItemText, ListSubheader } from "@mui/material"
 import EmailIcon from '@mui/icons-material/Email';
 import WebIcon from '@mui/icons-material/Web';
 import FacebookIcon from '@mui/icons-material/Facebook';
@@ -6,105 +6,131 @@ import InstagramIcon from '@mui/icons-material/Instagram';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import LocalPhoneIcon from '@mui/icons-material/LocalPhone';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
-import StoreMallDirectoryIcon from '@mui/icons-material/StoreMallDirectory';
 import LocalOfferIcon from '@mui/icons-material/LocalOffer';
 import ShopIcon from '@mui/icons-material/Shop';
 import AddLocationAltIcon from '@mui/icons-material/AddLocationAlt';
 import AndroidIcon from '@mui/icons-material/Android';
 import './FooterSite.css'
 
+import { DialogTitle } from '@mui/material';
+import { Link } from "react-router-dom";
+
 export const FooterSite = () => {
     return (
-        <Box className="backgroud-footer" maxWidth="xl"  >
-            <Grid container justifyContent="center" spacing={2}>
-                <Grid item  xs={6} sm={6} md={3} xl={3} lg={3}>
-                    <ListItem sx={{ pt: 0, pb: 0 }}>
+        <Grid container maxWidth="xl"  className="backgroud-footer" justifyContent="center" spacing={2}>
+            <Grid item xs={10} sm={10} md={3} xl={3} lg={3}>
+                <DialogTitle sx={{ py: 0, fontWeight: 'bold' }}>
+                    Contato
+                </DialogTitle>
+                <ListItem sx={{ py: 0 }}>
+                    <Link to="/">
                         <FormControlLabel
                             control={<LocalPhoneIcon />}
                             label="Comercial:(11)11111-1111"
                         />
-                    </ListItem>
-                    <ListItem sx={{ pt: 0, pb: 0 }}>
+                    </Link>
+                </ListItem>
+                <ListItem sx={{ py: 0 }}>
+                    <Link to="/">
                         <FormControlLabel
                             control={<LocalPhoneIcon />}
                             label="Suporte:(11)11111-1111"
                         />
-                    </ListItem>
-                    <ListItem sx={{ pt: 0, pb: 0 }}>
+                    </Link>
+                </ListItem>
+                <ListItem sx={{ py: 0 }}>
+                    <Link to="/">
                         <FormControlLabel
                             control={<EmailIcon />}
-                            label="E-mail:storeapp.official@store.com"
+                            label="storeapp.official@store.com"
                         />
-                    </ListItem>
-                    <ListItem sx={{ pt: 0, pb: 2 }}>
+                    </Link>
+                </ListItem>
+                <ListItem sx={{ pt: 0 }}>
+                    <Link to="/">
                         <FormControlLabel
                             control={<WebIcon />}
                             label="WerSite: www.store.com"
                         />
-                    </ListItem>
-
-                </Grid>
-
-                <Grid item xs={6} sm={6} md={2} xl={2} lg={2}>
-                    <ListItem sx={{ pt: 0, pb: 0 }}>
+                    </Link>
+                </ListItem>
+            </Grid>
+            <Grid item xs={10} sm={10} md={2} xl={2} lg={2}>
+                <DialogTitle sx={{ py: 0, fontWeight: 'bold' }}>
+                    Redes Sociais
+                </DialogTitle>
+                <ListItem sx={{ py: 0 }}>
+                    <Link to="/">
                         <FormControlLabel
                             control={<FacebookIcon />}
                             label="Facebook"
                         />
-                    </ListItem>
-                    <ListItem sx={{ pt: 0, pb: 0 }}>
+                    </Link>
+                </ListItem>
+                <ListItem sx={{ py: 0 }}>
+                    <Link to="/">
                         <FormControlLabel
                             control={<InstagramIcon />}
                             label="Instagram"
                         />
-                    </ListItem>
-                    <ListItem sx={{ pt: 0, pb: 0 }}>
+                    </Link>
+                </ListItem>
+                <ListItem sx={{ py: 0 }}>
+                    <Link to="/">
                         <FormControlLabel
                             control={<TwitterIcon />}
                             label="Twitter"
                         />
-                    </ListItem>
-                    <ListItem sx={{ pt: 0, pb: 2 }}>
+                    </Link>
+                </ListItem>
+                <ListItem sx={{ pt: 0 }}>
+                    <Link to="/">
                         <FormControlLabel
                             control={<LinkedInIcon />}
                             label="LinkedIn"
                         />
-                    </ListItem>
+                    </Link>
+                </ListItem>
 
-                </Grid>
+            </Grid>
 
-                <Grid item xs={6} sm={6} md={2} xl={2} lg={2}>
-                    <ListItem sx={{ pt: 0, pb: 0 }}>
+            <Grid item xs={10} sm={10} md={3} xl={3} lg={3}>
+                <DialogTitle sx={{ py: 0, fontWeight: 'bold' }}>
+                    Geral
+                </DialogTitle>
+                <ListItem sx={{ py: 0 }}>
+                    <Link to="/">
                         <FormControlLabel
                             control={<AddLocationAltIcon />}
-                            label="AddrEndereço"
+                            label="Endereço"
                         />
-                    </ListItem>
-                    <ListItem sx={{ pt: 0, pb: 0 }}>
+                    </Link>
+                </ListItem>
+                <ListItem sx={{ py: 0 }}>
+                    <Link to="/">
                         <FormControlLabel
                             control={<LocalOfferIcon />}
                             label="Ofertas"
                         />
-                    </ListItem>
-                    <ListItem sx={{ pt: 0, pb: 0 }}>
+                    </Link>
+                </ListItem>
+                <ListItem sx={{ py: 0 }}>
+                    <Link to="/">
                         <FormControlLabel
                             control={<ShopIcon />}
                             label="Items Mais comprados"
                         />
-                    </ListItem>
-                    <ListItem sx={{ pt: 0, pb: 2 }}>
+                    </Link>
+                </ListItem>
+                <ListItem sx={{ pt: 0 }}>
+                    <Link to="/">
                         <FormControlLabel
                             control={<AndroidIcon />}
                             label="Aplicativo"
                         />
-                    </ListItem>
-
-                </Grid>
-
-
+                    </Link>
+                </ListItem>
             </Grid>
-
-
-        </Box>
+        </Grid>
     )
 }

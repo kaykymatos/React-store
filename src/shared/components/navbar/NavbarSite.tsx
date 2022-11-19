@@ -1,3 +1,4 @@
+import { Box, Grid } from "@mui/material"
 import { useState } from "react"
 import { Container, Nav, Navbar } from "react-bootstrap"
 import { Link } from "react-router-dom"
@@ -5,8 +6,10 @@ import "./NavbarSite.css"
 
 export const NavbarSite = () => {
     const [activeMenu, setActiveMenu] = useState('')
-    return (
+    return (<>
+        
         <Navbar bg="dark" variant="dark">
+
             <Container>
                 <Nav className="me-auto lista_espacamento">
                     <Link to="/"
@@ -37,6 +40,15 @@ export const NavbarSite = () => {
                 </Nav>
             </Container>
         </Navbar>
+        <Box className="background-dashborad text-dashboard">
+            <Container >
+                <Grid item  >
+                    <h1>Welcome</h1>
+                    <p>This is for you, here you can buy a lot of products</p>
+                </Grid>
+            </Container>
+        </Box>
+    </>
 
 
     )

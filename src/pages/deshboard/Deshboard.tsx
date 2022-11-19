@@ -7,13 +7,12 @@ export const Deshboard = () => {
     const logo = require('./img/car.jpg');
     return (
         <>
-            <Box>
-                <Container maxWidth="xl" className="background-dashborad text-dashboard" >
+            <Box className="background-dashborad text-dashboard">
+                <Container maxWidth="xl" >
                     <Grid item  >
                         <h1>Welcome</h1>
                         <p>This is for you, here you can buy a lot of products</p>
                     </Grid>
-
                 </Container>
             </Box>
             <Box>

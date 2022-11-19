@@ -1,12 +1,14 @@
-import { Box } from "@mui/material"
+import { FooterSite, NavbarSite } from "../components"
 
 interface ILayoutPaginasProps {
     children: React.ReactNode
 }
 export const LayoutPaginas: React.FC<ILayoutPaginasProps> = ({ children }) => {
     return (
-        <Box>
+        <>
+            <NavbarSite />
             {children}
-        </Box>
+            <FooterSite/>
+        </>
     )
 }

@@ -5,11 +5,10 @@ import { LayoutPaginas } from './shared/layout';
 
 export const App = () => {
   return (
-      <Router>
-        <LayoutPaginas>
-          <ProjectRoutes />
-        </LayoutPaginas>
-      </Router>
-
+    <Router>
+      <LayoutPaginas>
+        <ProjectRoutes />
+      </LayoutPaginas>
+    </Router>
   );
-}
+};

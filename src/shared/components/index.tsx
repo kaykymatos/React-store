@@ -1,3 +1,3 @@
-export* from "./navbar/NavbarSite"
-export * from "./product-cards/ProductCards"
-export * from './footer/FooterSite'
+export * from './navbar/NavbarSite';
+export * from './product-cards/ProductCards';
+export * from './footer/FooterSite';

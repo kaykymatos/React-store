@@ -21,7 +21,7 @@ export const Products = () => {
             cardDescription="Bolsa feminina, perfeita para sair, design único"
             altImg="Bolsa Feminina"
             img={images[0]}
-            price="100,00"
+            price={100.00}
           />
         </Grid>
         <Grid item sm={6} xs={12} lg={3} md={3} xl={3}>
@@ -30,7 +30,7 @@ export const Products = () => {
             cardDescription="Para que gosta de um bo boné a escolha perfeita é esse, um boné com um ótimo material e muito estiloso"
             altImg="Boné"
             img={images[1]}
-            price="49,99"
+            price={49.99}
           />
         </Grid>
         <Grid item sm={6} xs={12} lg={3} md={3} xl={3}>
@@ -39,7 +39,7 @@ export const Products = () => {
             cardDescription="Uma linda camiseta branca para voce poder sair ese divertir com seus amigos e familiares"
             altImg="Camiseta branca"
             img={images[2]}
-            price="29,99"
+            price={29.99}
           />
         </Grid>
         <Grid item sm={6} xs={12} lg={3} md={3} xl={3}>
@@ -48,7 +48,7 @@ export const Products = () => {
             cardDescription="Jaqueta de couro original, estilosa, coloração preto escuro"
             altImg="Jaqueta"
             img={images[3]}
-            price="59,99"
+            price={59.99}
           />
         </Grid>
 
@@ -58,7 +58,7 @@ export const Products = () => {
             cardDescription="Bolsa escolar com um design incrivele alta resistencia"
             altImg="Bolsa"
             img={images[4]}
-            price="69,99"
+            price={69.99}
           />
         </Grid>
         <Grid item sm={6} xs={12} lg={3} md={3} xl={3}>
@@ -67,7 +67,7 @@ export const Products = () => {
             cardDescription="Luvas vermelhas, estachegando o natal, pege o seu paragora, luvas de couro lindas"
             altImg="Luvas"
             img={images[5]}
-            price="10,99"
+            price={10.99}
           />
         </Grid>
         <Grid item sm={6} xs={12} lg={3} md={3} xl={3}>
@@ -76,7 +76,7 @@ export const Products = () => {
             cardDescription="Tênis laranja com cadarso branco, para voce que gota de chegar no estilo nas festas"
             altImg="Tênis"
             img={images[6]}
-            price="24,99"
+            price={24.99}
           />
         </Grid>
         <Grid item sm={6} xs={12} lg={3} md={3} xl={3}>
@@ -85,7 +85,7 @@ export const Products = () => {
             cardDescription="Óculos de sol para voce que gosta de ir para a praia ou usar óculos de sol"
             altImg="Óculos de Sol"
             img={images[7]}
-            price="30,00"
+            price={30.00}
           />
         </Grid>
       </Grid>

@@ -16,7 +16,7 @@ interface IProductCardsProps {
   altImg: string;
   cardTitle: string;
   cardDescription: string;
-  price: string;
+  price: number;
 }
 export const ProductCards = ({
   img,

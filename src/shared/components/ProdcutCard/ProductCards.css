@@ -6,6 +6,11 @@
 .price-and-links {
   margin-top: 0px;
 }
+.prouct-card-houver:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+  transition: 0.1s;
+}
 
 @media screen and (max-width: 600px) {
   .text-card p {

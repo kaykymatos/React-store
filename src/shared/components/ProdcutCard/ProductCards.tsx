@@ -27,7 +27,7 @@ export const ProductCards = ({
 }: IProductCardsProps) => {
   return (
     <Container
-      className="shadow-container"
+      className="shadow-container prouct-card-houver"
       sx={{ backgroundColor: '#FFFFFF', paddingTop: 1, borderRadius: 3 }}
     >
       <Box
@@ -56,7 +56,7 @@ export const ProductCards = ({
         sx={{ color: '#08FF00', marginLeft: 2 }}
         component="div"
       >
-        R${price}
+        R${price.toFixed(2)}
         <CardActions sx={{ marginLeft: 0 }}>
           <Link href="#" title="Comprar">
             <ShoppingCartIcon />

@@ -5,7 +5,7 @@ export interface ICars {
   id: number;
   title: string;
   altImg: string;
-  imgUrl:string;
+  imgUrl: string;
   description: string;
   price: number;
 }
@@ -19,8 +19,9 @@ const getAllCars = async (): Promise<ICars[] | ApiException> => {
   }
 };
 
-
-const buyProduct = async (car: Omit<ICars, 'id'>): Promise<ICars | ApiException> => {
+const buyProduct = async (
+  car: Omit<ICars, 'id'>
+): Promise<ICars | ApiException> => {
   try {
     const { data } = await ApiConfig().post<ICars>('/cars');
     return data;

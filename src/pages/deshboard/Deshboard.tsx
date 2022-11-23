@@ -8,16 +8,7 @@ import './Deshboard.css';
 
 export const Deshboard = () => {
   const [listaProdutos, setListaProdutos] = useState<ICars[]>();
-  const images: string[] = [
-    require('./img/bolsa.jpg'),
-    require('./img/bone.jpg'),
-    require('./img/camiseta.jpg'),
-    require('./img/jaqueta.jpg'),
-    require('./img/mochila.jpg'),
-    require('./img/luvas.jpg'),
-    require('./img/tenis.jpg'),
-    require('./img/oculos.jpg'),
-  ];
+
   useEffect(() => {
     CarServices.getAllCars().then((result) => {
       if (result instanceof ApiException) {
@@ -30,27 +21,12 @@ export const Deshboard = () => {
   return (
     <div>
       <Grid className="backgroudn-color-dashboard">
-        <Grid
-          spacing={0}
-          xs={12}
-          sm={12}
-          md={12}
-          lg={12}
-          xl={12}
-          container
-          justifyContent="center"
-          alignItems="center"
-        >
+        <Grid spacing={0} container justifyContent="center" alignItems="center">
           <h1>Store.com</h1>
         </Grid>
         <Grid
           spacing={0}
           className="text-informations"
-          xs={12}
-          sm={12}
-          md={12}
-          lg={12}
-          xl={12}
           pt={0}
           pb={5}
           container
@@ -70,7 +46,7 @@ export const Deshboard = () => {
                   altImg={listItem.altImg}
                   cardDescription={listItem.description}
                   cardTitle={listItem.title}
-                  img={images[listItem.id-1]}
+                  img={listItem.imgUrl}
                   price={listItem.price}
                 />
               </Grid>

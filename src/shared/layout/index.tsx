@@ -1,15 +1,15 @@
-import { Navbar } from "../components"
+import { FooterSite, NavbarSite } from '../components';
+import './Layout.css';
 
 interface ILayoutPaginasProps {
-    children: React.ReactNode
+  children: React.ReactNode;
 }
-export const LayoutPaginas: React.FC<ILayoutPaginasProps> = ({ children }) => {
-    return (
-        <div>
-            <Navbar />
-            <div>
-                {children}
-            </div>
-        </div>
-    )
-}
+export const LayoutPaginas = ({ children }: ILayoutPaginasProps) => {
+  return (
+    <div className="background-site">
+      <NavbarSite />
+      {children}
+      <FooterSite />
+    </div>
+  );
+};

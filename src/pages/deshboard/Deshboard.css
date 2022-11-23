@@ -1,0 +1,23 @@
+.text-dashboard {
+  color: white;
+  text-shadow: 2px 2px #000000;
+}
+.backgroudn-color-dashboard {
+  background: rgb(11, 0, 205);
+  background: linear-gradient(
+    90deg,
+    rgba(11, 0, 205, 1) 0%,
+    rgba(79, 18, 246, 1) 46%,
+    rgba(0, 212, 255, 1) 100%
+  );
+}
+.text-informations {
+  font-size: 20px;
+}
+
+@media screen and (max-width: 600px) {
+  .text-informations {
+    font-size: 16px;
+    text-align: center;
+  }
+}

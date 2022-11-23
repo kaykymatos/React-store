@@ -1,0 +1,25 @@
+.lista-espacamento a {
+  text-decoration: none;
+  padding-inline-start: 20px;
+  color: white;
+}
+
+.lista-espacamento :hover {
+  color: rgb(83, 255, 83);
+  font-size: 19px;
+  transition: 0.1s;
+}
+.lista-espacamento {
+  text-align: center;
+  padding-top: 16px;
+  height: 40px;
+  background-color: rgb(51, 48, 48);
+}
+.background-dashborad {
+  background-image: url('./img/dashboar-image.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  text-align: center;
+  padding: 30px;
+}

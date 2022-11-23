@@ -1,0 +1,22 @@
+.shadow-container {
+  border: 1px solid;
+  padding: 10px;
+  box-shadow: 1px 1px 5px #000000;
+}
+.price-and-links {
+  margin-top: 0px;
+}
+.prouct-card-houver:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+  transition: 0.1s;
+}
+
+@media screen and (max-width: 600px) {
+  .text-card p {
+    font-size: 20px;
+  }
+  .price-and-links {
+    padding-top: 40px;
+  }
+}

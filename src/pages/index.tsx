@@ -1,3 +1,4 @@
-export * from './deshboard/Deshboard'
-export * from './about/About'
-export * from './products/Products'
+export * from './Deshboard/Deshboard';
+export * from './About/About';
+export * from './Products/Products';
+export * from './Car/Car';

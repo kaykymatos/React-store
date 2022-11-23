@@ -1,0 +1,12 @@
+.backgroud-footer {
+  background-color: rgb(156, 147, 147);
+  padding-bottom: 20px;
+}
+
+.backgroud-footer a {
+  text-decoration: none;
+  color: black;
+}
+.backgroud-footer a:hover {
+  color: rgb(41, 248, 41);
+}

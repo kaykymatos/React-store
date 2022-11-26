@@ -1,4 +1,5 @@
 import {
+  Button,
   CardActions,
   CardContent,
   CardMedia,
@@ -10,21 +11,38 @@ import { Box } from '@mui/system';
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import InfoIcon from '@mui/icons-material/Info';
 import './ProductCards.css';
+import { useCallback } from 'react';
+import { CarServices } from '../../services/api/cars/CarServices';
+import { ApiException } from '../../services/api/ApiException';
 
-interface IProductCardsProps {
+type ProductCardsProps = {
   img: string;
   altImg: string;
   cardTitle: string;
   cardDescription: string;
   price: number;
-}
+  codigo: number;
+};
 export const ProductCards = ({
   img,
   altImg,
   cardTitle,
   cardDescription,
   price,
-}: IProductCardsProps) => {
+  codigo,
+}: ProductCardsProps) => {
+
+  const handlelickBuyCar = useCallback(() => {
+    console.log('Passou pelo handleclick');
+    CarServices.buyProduct(codigo).then((result) => {
+      if (result instanceof ApiException) {
+        alert(result.message);
+      } else {
+        alert('Compre feita com suceso!');
+      }
+    });
+  }, []);
+
   return (
     <Container
       className="shadow-container prouct-card-houver"
@@ -58,9 +76,9 @@ export const ProductCards = ({
       >
         R${price.toFixed(2)}
         <CardActions sx={{ marginLeft: 0 }}>
-          <Link href="#" title="Comprar">
+          <Button onClick={handlelickBuyCar} title="Comprar">
             <ShoppingCartIcon />
-          </Link>
+          </Button>
           <Link href="#" title="Info">
             <InfoIcon />
           </Link>

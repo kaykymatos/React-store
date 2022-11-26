@@ -3,8 +3,12 @@
   padding-inline-start: 20px;
   color: white;
 }
-
-.lista-espacamento :hover {
+.car-icon{
+  float: right;
+  padding-right: 20px;
+  color: rgb(0, 255, 0);
+}
+.lista-espacamento a:hover {
   color: rgb(83, 255, 83);
   font-size: 19px;
   transition: 0.1s;

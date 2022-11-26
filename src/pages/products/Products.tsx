@@ -23,6 +23,7 @@ export const Products = () => {
           return (
             <Grid item key={listItem.id} sm={6} xs={12} lg={3} md={3} xl={3}>
               <ProductCards
+                codigo={listItem.id}
                 altImg={listItem.altImg}
                 cardDescription={listItem.description}
                 cardTitle={listItem.title}

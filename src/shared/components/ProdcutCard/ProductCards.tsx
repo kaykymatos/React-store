@@ -4,7 +4,6 @@ import {
   CardContent,
   CardMedia,
   Container,
-  Link,
   Typography,
 } from '@mui/material';
 import { Box } from '@mui/system';
@@ -14,15 +13,16 @@ import './ProductCards.css';
 import { useCallback } from 'react';
 import { CarServices } from '../../services/api/cars/CarServices';
 import { ApiException } from '../../services/api/ApiException';
+import { useNavigate } from 'react-router-dom';
 
-type ProductCardsProps = {
+export interface ProductCardsProps {
   img: string;
   altImg: string;
   cardTitle: string;
   cardDescription: string;
   price: number;
   codigo: number;
-};
+}
 export const ProductCards = ({
   img,
   altImg,
@@ -31,14 +31,23 @@ export const ProductCards = ({
   price,
   codigo,
 }: ProductCardsProps) => {
-
   const handlelickBuyCar = useCallback(() => {
-    console.log('Passou pelo handleclick');
     CarServices.buyProduct(codigo).then((result) => {
       if (result instanceof ApiException) {
         alert(result.message);
       } else {
-        alert('Compre feita com suceso!');
+        alert('Compre o item foi adicionado ao carinho! Item: ' + result.title);
+      }
+    });
+  }, []);
+
+  const navigate = useNavigate();
+  const handlelickInfoCar = useCallback(() => {
+    CarServices.getOneCar(codigo).then((result) => {
+      if (result instanceof ApiException) {
+        alert(result.message);
+      } else {
+        navigate(`cars/${result.id}`);
       }
     });
   }, []);
@@ -79,9 +88,9 @@ export const ProductCards = ({
           <Button onClick={handlelickBuyCar} title="Comprar">
             <ShoppingCartIcon />
           </Button>
-          <Link href="#" title="Info">
+          <Button onClick={handlelickInfoCar} title="Info">
             <InfoIcon />
-          </Link>
+          </Button>
         </CardActions>
       </Typography>
     </Container>

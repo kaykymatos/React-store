@@ -1,12 +1,12 @@
 import { Container, Grid } from '@mui/material';
-import { useEffect, useState } from 'react';
-import { ProductCards } from '../../shared/components';
-import { BuyCarCards } from '../../shared/components/BuyCarCards/BuyCarCards';
+import { useCallback, useEffect, useState } from 'react';
+import { BuyCarCards } from '../../shared/components';
 import { ApiException } from '../../shared/services/api/ApiException';
 import { CarServices, ICars } from '../../shared/services/api/cars/CarServices';
 
 export const Car = () => {
   const [listaProdutos, setListaProdutos] = useState<ICars[]>();
+
   useEffect(() => {
     CarServices.getAllBuyCars().then((result) => {
       if (result instanceof ApiException) {
@@ -16,6 +16,19 @@ export const Car = () => {
       }
     });
   }, []);
+
+  const handleDelet = useCallback((id: number) => {
+    CarServices.deleteBuyCar(id).then((result) => {
+      if (result instanceof ApiException) {
+        alert(result.message);
+      } else {
+        setListaProdutos((oldLista) => {
+          return oldLista?.filter((oldListItem) => oldListItem.id !== id);
+        });
+      }
+    });
+  }, []);
+
   return (
     <div>
       <Grid className="backgroudn-color-dashboard">
@@ -41,6 +54,8 @@ export const Car = () => {
             return (
               <Grid item key={listItem.id} sm={6} xs={12} lg={3} md={3} xl={3}>
                 <BuyCarCards
+                  productId={listItem.id}
+                  onClickDelete={() => handleDelet(listItem.id)}
                   productAltImage={listItem.altImg}
                   productDescription={listItem.description}
                   productName={listItem.title}

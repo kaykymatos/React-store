@@ -1,8 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { App } from './App';
-import { createBrowserRouter, Navigate, RouterProvider } from 'react-router-dom';
+import {
+  createBrowserRouter,
+  Navigate,
+  RouterProvider,
+} from 'react-router-dom';
 import { About, Car, Dashboard, Products } from './pages';
+import { CarDetails } from './pages/CarDetails/CarDetails';
 
 const router = createBrowserRouter([
   {
@@ -14,20 +19,24 @@ const router = createBrowserRouter([
       },
       {
         path: '/products',
-        element:<Products/>
+        element: <Products />,
       },
       {
         path: '/about',
-        element:<About/>
+        element: <About />,
       },
       {
         path: '/cars',
-        element:<Car/>
+        element: <Car />,
       },
       {
-        path:'*',
-        element:<Navigate to='/'/>
-      }
+        path: '/cars/:id',
+        element: <CarDetails />,
+      },
+      {
+        path: '*',
+        element: <Navigate to="/" />,
+      },
     ],
   },
 ]);
@@ -36,6 +45,6 @@ const root = ReactDOM.createRoot(
 );
 root.render(
   <React.StrictMode>
-    <RouterProvider router={router}/>
+    <RouterProvider router={router} />
   </React.StrictMode>
 );

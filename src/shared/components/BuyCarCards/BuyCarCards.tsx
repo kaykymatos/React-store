@@ -1,10 +1,15 @@
 import {
   Box,
+  Button,
   CardContent,
   CardMedia,
   Container,
   Typography,
 } from '@mui/material';
+import { useCallback } from 'react';
+import { ApiConfig } from '../../services/api/ApiConfig';
+import { ApiException } from '../../services/api/ApiException';
+import { CarServices } from '../../services/api/cars/CarServices';
 import './BuyCarCards.css';
 
 interface IBuyCarCardsProps {
@@ -13,6 +18,8 @@ interface IBuyCarCardsProps {
   productDescription: string;
   productAltImage: string;
   productUrlImage: string;
+  productId: number;
+  onClickDelete: (codigo: number) => void;
 }
 export const BuyCarCards = ({
   productDescription,
@@ -20,6 +27,8 @@ export const BuyCarCards = ({
   productPrice,
   productAltImage,
   productUrlImage,
+  onClickDelete,
+  productId,
 }: IBuyCarCardsProps) => {
   return (
     <Container
@@ -53,6 +62,9 @@ export const BuyCarCards = ({
         component="div"
       >
         R${productPrice.toFixed(2)}
+        <Button sx={{ marginLeft: 4 }} onClick={() => onClickDelete(productId)}>
+          Deletar
+        </Button>
       </Typography>
     </Container>
   );

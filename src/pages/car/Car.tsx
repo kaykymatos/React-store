@@ -59,7 +59,7 @@ export const Car = () => {
                   productAltImage={listItem.altImg}
                   productDescription={listItem.description}
                   productName={listItem.title}
-                  productUrlImage={listItem.imgUrl}
+                  productUrlImage={listItem.imgUrl[0]}
                   productPrice={listItem.price}
                 />
               </Grid>

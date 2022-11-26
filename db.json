@@ -5,15 +5,23 @@
       "title": "Bolsa Feminina",
       "description": "Bolsa feminina, perfeita para sair, design único",
       "altImg": "Bolsa Feminina",
-      "imgUrl": "https://images.pexels.com/photos/3908800/pexels-photo-3908800.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "imgUrl": [
+        "https://images.pexels.com/photos/3908800/pexels-photo-3908800.jpeg?auto=compress&cs=tinysrgb&w=600",
+        "https://images.pexels.com/photos/3908800/pexels-photo-3908800.jpeg?auto=compress&cs=tinysrgb&w=600",
+        "https://images.pexels.com/photos/3908800/pexels-photo-3908800.jpeg?auto=compress&cs=tinysrgb&w=600"
+      ],
       "price": 100
     },
     {
       "id": 2,
       "title": "Boné",
-      "description": "Para que gosta de um bo boné a escolha perfeita é esse, um boné com um ótimo material e muito estiloso",
+      "description": "Para que gosta de um boné a escolha perfeita é esse, um boné com um ótimo material e muito estiloso",
       "altImg": "Boné",
-      "imgUrl": "https://images.pexels.com/photos/844867/pexels-photo-844867.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "imgUrl": [
+        "https://images.pexels.com/photos/844867/pexels-photo-844867.jpeg?auto=compress&cs=tinysrgb&w=600",
+        "https://images.pexels.com/photos/844867/pexels-photo-844867.jpeg?auto=compress&cs=tinysrgb&w=600",
+        "https://images.pexels.com/photos/844867/pexels-photo-844867.jpeg?auto=compress&cs=tinysrgb&w=600"
+      ],
       "price": 49.99
     },
     {
@@ -21,7 +29,11 @@
       "title": "Camiseta branca",
       "description": "Uma linda camiseta branca para voce poder sair ese divertir com seus amigos e familiares",
       "altImg": "Camiseta branca",
-      "imgUrl": "https://images.pexels.com/photos/1304647/pexels-photo-1304647.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "imgUrl": [
+        "https://images.pexels.com/photos/1304647/pexels-photo-1304647.jpeg?auto=compress&cs=tinysrgb&w=600",
+        "https://images.pexels.com/photos/1304647/pexels-photo-1304647.jpeg?auto=compress&cs=tinysrgb&w=600",
+        "https://images.pexels.com/photos/1304647/pexels-photo-1304647.jpeg?auto=compress&cs=tinysrgb&w=600"
+      ],
       "price": 29.99
     },
     {
@@ -29,7 +41,11 @@
       "title": "Jaqueta",
       "description": "Jaqueta de couro original, estilosa, coloração preto escuro",
       "altImg": "Jaqueta",
-      "imgUrl": "https://images.pexels.com/photos/1124468/pexels-photo-1124468.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "imgUrl": [
+        "https://images.pexels.com/photos/1124468/pexels-photo-1124468.jpeg?auto=compress&cs=tinysrgb&w=600",
+        "https://images.pexels.com/photos/1124468/pexels-photo-1124468.jpeg?auto=compress&cs=tinysrgb&w=600",
+        "https://images.pexels.com/photos/1124468/pexels-photo-1124468.jpeg?auto=compress&cs=tinysrgb&w=600"
+      ],
       "price": 59.99
     },
     {
@@ -37,15 +53,23 @@
       "title": "Bolsa",
       "description": "Bolsa escolar com um design incrivele alta resistencia",
       "altImg": "Bolsa",
-      "imgUrl": "https://images.pexels.com/photos/3731256/pexels-photo-3731256.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "imgUrl": [
+        "https://images.pexels.com/photos/3731256/pexels-photo-3731256.jpeg?auto=compress&cs=tinysrgb&w=600",
+        "https://images.pexels.com/photos/3731256/pexels-photo-3731256.jpeg?auto=compress&cs=tinysrgb&w=600",
+        "https://images.pexels.com/photos/3731256/pexels-photo-3731256.jpeg?auto=compress&cs=tinysrgb&w=600"
+      ],
       "price": 69.99
     },
     {
       "id": 6,
       "title": "Luvas",
-      "description": "Luvas vermelhas, estachegando o natal, pege o seu paragora, luvas de couro lindas",
+      "description": "Luvas vermelhas, estachegando o natal, pege o seu para gora, luvas de couro lindas",
       "altImg": "Luvas",
-      "imgUrl": "https://images.pexels.com/photos/45057/pexels-photo-45057.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "imgUrl": [
+        "https://images.pexels.com/photos/45057/pexels-photo-45057.jpeg?auto=compress&cs=tinysrgb&w=600",
+        "https://images.pexels.com/photos/45057/pexels-photo-45057.jpeg?auto=compress&cs=tinysrgb&w=600",
+        "https://images.pexels.com/photos/45057/pexels-photo-45057.jpeg?auto=compress&cs=tinysrgb&w=600"
+      ],
       "price": 10.99
     },
     {
@@ -53,7 +77,11 @@
       "title": "Tênis",
       "description": "Tênis laranja com cadarso branco, para voce que gota de chegar no estilo nas festas",
       "altImg": "Tênis",
-      "imgUrl": "https://images.pexels.com/photos/1464625/pexels-photo-1464625.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "imgUrl": [
+        "https://images.pexels.com/photos/1464625/pexels-photo-1464625.jpeg?auto=compress&cs=tinysrgb&w=600",
+        "https://images.pexels.com/photos/45057/pexels-photo-45057.jpeg?auto=compress&cs=tinysrgb&w=600",
+        "https://images.pexels.com/photos/45057/pexels-photo-45057.jpeg?auto=compress&cs=tinysrgb&w=600"
+      ],
       "price": 24.99
     },
     {
@@ -61,9 +89,38 @@
       "title": "Óculos de sol",
       "description": "Óculos de sol para voce que gosta de ir para a praia ou usar óculos de sol",
       "altImg": "Óculos de Sol",
-      "imgUrl": "https://images.pexels.com/photos/147641/pexels-photo-147641.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "imgUrl": [
+        "https://images.pexels.com/photos/147641/pexels-photo-147641.jpeg?auto=compress&cs=tinysrgb&w=600",
+        "https://images.pexels.com/photos/147641/pexels-photo-147641.jpeg?auto=compress&cs=tinysrgb&w=600",
+        "https://images.pexels.com/photos/147641/pexels-photo-147641.jpeg?auto=compress&cs=tinysrgb&w=600"
+      ],
       "price": 30
     }
   ],
-  "boughtCars": []
+  "boughtCars": [
+    {
+      "id": 1,
+      "title": "Luvas",
+      "description": "Luvas vermelhas, estachegando o natal, pege o seu para gora, luvas de couro lindas",
+      "altImg": "Luvas",
+      "imgUrl": [
+        "https://images.pexels.com/photos/45057/pexels-photo-45057.jpeg?auto=compress&cs=tinysrgb&w=600",
+        "https://images.pexels.com/photos/45057/pexels-photo-45057.jpeg?auto=compress&cs=tinysrgb&w=600",
+        "https://images.pexels.com/photos/45057/pexels-photo-45057.jpeg?auto=compress&cs=tinysrgb&w=600"
+      ],
+      "price": 10.99
+    },
+    {
+      "id": 2,
+      "title": "Camiseta branca",
+      "description": "Uma linda camiseta branca para voce poder sair ese divertir com seus amigos e familiares",
+      "altImg": "Camiseta branca",
+      "imgUrl": [
+        "https://images.pexels.com/photos/1304647/pexels-photo-1304647.jpeg?auto=compress&cs=tinysrgb&w=600",
+        "https://images.pexels.com/photos/1304647/pexels-photo-1304647.jpeg?auto=compress&cs=tinysrgb&w=600",
+        "https://images.pexels.com/photos/1304647/pexels-photo-1304647.jpeg?auto=compress&cs=tinysrgb&w=600"
+      ],
+      "price": 29.99
+    }
+  ]
 }

@@ -27,7 +27,7 @@ export const Products = () => {
                 altImg={listItem.altImg}
                 cardDescription={listItem.description}
                 cardTitle={listItem.title}
-                img={listItem.imgUrl}
+                img={listItem.imgUrl[0]}
                 price={listItem.price}
               />
             </Grid>

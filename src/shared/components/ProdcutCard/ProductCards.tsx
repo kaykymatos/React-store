@@ -57,25 +57,29 @@ export const ProductCards = ({
       className="shadow-container prouct-card-houver"
       sx={{ backgroundColor: '#FFFFFF', paddingTop: 1, borderRadius: 3 }}
     >
-      <Box
-        className="container-card"
-        sx={{ maxWidth: 331, height: 300, marginTop: 2 }}
-      >
-        <CardMedia
-          sx={{ borderRadius: 3 }}
-          component="img"
-          height="140"
-          image={img}
-          alt={altImg}
-          title={altImg}
-        />
-        <CardContent className="text-card ">
-          <Typography gutterBottom variant="h5" component="div">
-            {cardTitle}
-          </Typography>
-          <Typography color="text.secondary">{cardDescription}</Typography>
-        </CardContent>
-      </Box>
+      <div onClick={handlelickInfoCar}>
+        <Box
+          className="container-card"
+          sx={{ maxWidth: 331, height: 300, marginTop: 2 }}
+        >
+          <CardMedia
+            sx={{ borderRadius: 3 }}
+            component="img"
+            height="140"
+            image={img}
+            alt={altImg}
+            title={altImg}
+          />
+          <CardContent className="text-card ">
+            <Typography gutterBottom variant="h5" component="div">
+              {cardTitle}
+            </Typography>
+            <Typography color="text.secondary">
+              {cardDescription.substring(0, 40) + '...'}
+            </Typography>
+          </CardContent>
+        </Box>
+      </div>
       <Typography
         gutterBottom
         className="price-and-links"

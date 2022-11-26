@@ -5,7 +5,7 @@ export interface ICars {
   id: number;
   title: string;
   altImg: string;
-  imgUrl: string;
+  imgUrl: string[];
   description: string;
   price: number;
 }

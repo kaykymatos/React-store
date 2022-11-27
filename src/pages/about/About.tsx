@@ -54,7 +54,7 @@ export const About = () => {
         <p>
           Store.com ajudando você a vconhecer novos horizontes, inovações, e
           muito mais para que você possa viajar pelo mundo, ficar confortável e
-          estilozo
+          estiloso
         </p>
       </>
     );

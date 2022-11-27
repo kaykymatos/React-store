@@ -88,12 +88,14 @@ export const ProductCards = ({
         component="div"
       >
         R${price.toFixed(2)}
-        <CardActions sx={{ marginLeft: 0 }}>
-          <Button onClick={handlelickBuyCar} title="Comprar">
+        <CardActions sx={{ marginLeft: 0 }} className='label-buttons'>
+          <Button onClick={handlelickBuyCar}sx={{marginRight:10}}  title="Comprar">
             <ShoppingCartIcon />
+            <label>Comprar</label>
           </Button>
-          <Button onClick={handlelickInfoCar} title="Info">
+          <Button onClick={handlelickInfoCar}sx={{marginRight:10}} title="Info">
             <InfoIcon />
+            <label>Informações</label>
           </Button>
         </CardActions>
       </Typography>

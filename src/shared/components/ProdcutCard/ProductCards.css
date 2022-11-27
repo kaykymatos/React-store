@@ -12,6 +12,9 @@
   transition: 0.1s;
 }
 
+.label-buttons label{
+  cursor: pointer;
+}
 @media screen and (max-width: 600px) {
   .text-card p {
     font-size: 20px;

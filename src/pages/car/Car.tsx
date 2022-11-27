@@ -29,6 +29,13 @@ export const Car = () => {
     });
   }, []);
 
+  const findSumUsingMap = () => {
+    let valuePay = 0;
+    listaProdutos?.map(({ price }) => (valuePay = valuePay + price));
+    return { pay: valuePay.toFixed(2), totalItens: listaProdutos?.length };
+  };
+  const allValuesPay = findSumUsingMap();
+
   return (
     <div>
       <Grid className="backgroudn-color-dashboard">
@@ -66,6 +73,8 @@ export const Car = () => {
             );
           })}
         </Grid>
+        <h1>Total a pagar: R${allValuesPay.pay}</h1>
+        <h1>Quantidadede itens: {allValuesPay.totalItens}</h1>
       </Container>
     </div>
   );

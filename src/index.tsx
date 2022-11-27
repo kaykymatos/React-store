@@ -8,6 +8,7 @@ import {
 } from 'react-router-dom';
 import { About, Car, Dashboard, Products } from './pages';
 import { CarDetails } from './pages/CarDetails/CarDetails';
+import { NotFoundRout } from './shared/components';
 
 const router = createBrowserRouter([
   {
@@ -35,7 +36,7 @@ const router = createBrowserRouter([
       },
       {
         path: '*',
-        element: <Navigate to="/" />,
+        element: <NotFoundRout />,
       },
     ],
   },

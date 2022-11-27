@@ -12,7 +12,7 @@
   transition: 0.1s;
 }
 
-.label-buttons label{
+.label-buttons label {
   cursor: pointer;
 }
 @media screen and (max-width: 600px) {

@@ -2,10 +2,10 @@
   text-decoration: none;
   padding-inline-start: 20px;
 }
-.lista-normal-link{
-  color: rgb(194, 216, 94)
+.lista-normal-link {
+  color: rgb(194, 216, 94);
 }
-.lista-active-link{
+.lista-active-link {
   color: white;
 }
 .car-icon {

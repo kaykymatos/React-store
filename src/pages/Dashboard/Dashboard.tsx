@@ -4,9 +4,9 @@ import { useEffect, useState } from 'react';
 import { ProductCards } from '../../shared/components';
 import { ApiException } from '../../shared/services/api/ApiException';
 import { CarServices, ICars } from '../../shared/services/api/cars/CarServices';
-import './Deshboard.css';
+import './Dashboard.css';
 
-export const Deshboard = () => {
+export const Dashboard = () => {
   const [listaProdutos, setListaProdutos] = useState<ICars[]>();
 
   useEffect(() => {
@@ -43,10 +43,11 @@ export const Deshboard = () => {
             return (
               <Grid item key={listItem.id} sm={6} xs={12} lg={3} md={3} xl={3}>
                 <ProductCards
+                  codigo={listItem.id}
                   altImg={listItem.altImg}
                   cardDescription={listItem.description}
                   cardTitle={listItem.title}
-                  img={listItem.imgUrl}
+                  img={listItem.imgUrl[0]}
                   price={listItem.price}
                 />
               </Grid>

@@ -1,13 +1,17 @@
 .lista-espacamento a {
   text-decoration: none;
   padding-inline-start: 20px;
+}
+.lista-normal-link{
+  color: rgb(194, 216, 94)
+}
+.lista-active-link{
   color: white;
 }
-
-.lista-espacamento :hover {
-  color: rgb(83, 255, 83);
-  font-size: 19px;
-  transition: 0.1s;
+.car-icon {
+  float: right;
+  padding-right: 20px;
+  color: rgb(0, 255, 0);
 }
 .lista-espacamento {
   text-align: center;

@@ -1,0 +1,9 @@
+.image-changes img {
+  cursor: pointer;
+  margin: 0 auto;
+  width: 100%;
+}
+.image-changes img:hover {
+  transform: scale(2);
+  transition: 0.1s;
+}

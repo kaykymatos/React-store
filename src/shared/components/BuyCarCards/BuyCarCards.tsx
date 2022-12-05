@@ -6,10 +6,6 @@ import {
   Container,
   Typography,
 } from '@mui/material';
-import { useCallback } from 'react';
-import { ApiConfig } from '../../services/api/ApiConfig';
-import { ApiException } from '../../services/api/ApiException';
-import { CarServices } from '../../services/api/cars/CarServices';
 import './BuyCarCards.css';
 
 interface IBuyCarCardsProps {

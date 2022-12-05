@@ -36,7 +36,9 @@ export const ProductCards = ({
       if (result instanceof ApiException) {
         alert(result.message);
       } else {
-        alert('Compre o item foi adicionado ao carinho! Item: ' + result.title);
+        alert(
+          'O item foi adicionado ao carinho! Item: ' + result.title
+        );
       }
     });
   }, []);
@@ -88,12 +90,20 @@ export const ProductCards = ({
         component="div"
       >
         R${price.toFixed(2)}
-        <CardActions sx={{ marginLeft: 0 }} className='label-buttons'>
-          <Button onClick={handlelickBuyCar}sx={{marginRight:10}}  title="Comprar">
+        <CardActions sx={{ marginLeft: 0 }} className="label-buttons">
+          <Button
+            onClick={handlelickBuyCar}
+            sx={{ marginRight: 10 }}
+            title="Comprar"
+          >
             <ShoppingCartIcon />
             <label>Comprar</label>
           </Button>
-          <Button onClick={handlelickInfoCar}sx={{marginRight:10}} title="Info">
+          <Button
+            onClick={handlelickInfoCar}
+            sx={{ marginRight: 10 }}
+            title="Info"
+          >
             <InfoIcon />
             <label>Informações</label>
           </Button>

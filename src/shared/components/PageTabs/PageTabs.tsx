@@ -1,4 +1,4 @@
-import { Grid, Tab } from '@mui/material';
+import { Button, Grid, Tab } from '@mui/material';
 
 interface IPageTabsProps {
   postsPerPage: number;
@@ -29,9 +29,9 @@ export const PageTabs = ({
           justifyContent="center"
           alignItems="center"
         >
-          <a onClick={() => paginate(number)} href="#products">
-            <Tab label={number} />
-          </a>
+          <Button onClick={() => paginate(number)} sx={{marginTop:5, backgroundColor:'blue', marginRight:1}} variant="contained" href="#products">
+            {number}
+          </Button>
         </Grid>
       ))}
     </>

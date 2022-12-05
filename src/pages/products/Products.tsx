@@ -26,23 +26,39 @@ export const Products = () => {
     const paginate = (pageNumber: number) => setCurrentPage(pageNumber);
     return (
       <Container maxWidth="xl" sx={{ paddingBottom: 5, paddingTop: 5 }}>
-        <Grid spacing={3} container justifyContent="center" alignItems="center">
-          {isLoading && <p>Carregando...</p>}
-          {isError && <p>Erro No servidor</p>}
-          {currentPosts?.map((listItem) => {
-            return (
-              <Grid item key={listItem.id} sm={6} xs={12} lg={3} md={3} xl={3}>
-                <ProductCards
-                  codigo={listItem.id}
-                  altImg={listItem.altImg}
-                  cardDescription={listItem.description}
-                  cardTitle={listItem.title}
-                  img={listItem.imgUrl[0]}
-                  price={listItem.price}
-                />
-              </Grid>
-            );
-          })}
+        <section id="products">
+          <Grid
+            spacing={3}
+            container
+            justifyContent="center"
+            alignItems="center"
+          >
+            {isLoading && <p>Carregando...</p>}
+            {isError && <p>Erro no servidor!</p>}
+
+            {currentPosts?.map((listItem) => {
+              return (
+                <Grid
+                  item
+                  key={listItem.id}
+                  sm={6}
+                  xs={12}
+                  lg={3}
+                  md={3}
+                  xl={3}
+                >
+                  <ProductCards
+                    codigo={listItem.id}
+                    altImg={listItem.altImg}
+                    cardDescription={listItem.description}
+                    cardTitle={listItem.title}
+                    img={listItem.imgUrl[0]}
+                    price={listItem.price}
+                  />
+                </Grid>
+              );
+            })}
+          </Grid>
           <Grid
             sx={{
               display: 'flex',
@@ -56,7 +72,7 @@ export const Products = () => {
               paginate={paginate}
             />
           </Grid>
-        </Grid>
+        </section>
       </Container>
     );
   }
